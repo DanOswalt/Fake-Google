@@ -66,12 +66,13 @@ a li:hover {
 }
 
 #search {
-	display: block;
+	display: inline-block;
 	margin: 5px 5px 25px 5px;
 	width: 425px;
 	height: 26px;
 	font-size: 16px;
 	border: none;
+	vertical-align: middle;
 }
 
 #search-container:hover {
@@ -84,6 +85,13 @@ a li:hover {
 
 #search:focus {
 	outline: none;
+}
+
+#voice-icon {
+	display: inline-block;
+	cursor: pointer;
+	margin-left: 15px;
+	margin-bottom: 3px;
 }
 
 #btns-container {
