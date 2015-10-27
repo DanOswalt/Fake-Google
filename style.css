@@ -1,3 +1,7 @@
+/**, *:before, *:after {
+  box-sizing: border-box;
+}*/
+
 body {
 	font-family: arial, sans-serif;
 	color: #000;
@@ -38,7 +42,8 @@ a:visited {
 	color: #222;
 }
 
-a:hover {
+a:hover, 
+a li:hover {
 	text-decoration: underline;
 }
 
@@ -50,33 +55,99 @@ a:hover {
 	width: 272px;
 }
 
-footer {
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	height: 50px;
-	background-color: #eee;
+#search-container {
+	display: block;
+	margin: 20px auto;
 	padding: 0;
+	width: 484px;
+	height: 38px;
+	font-size: 16px;
+	border: 1px #ddd solid;	
+}
+
+#search {
+	display: block;
+	margin: 5px 5px 25px 5px;
+	width: 425px;
+	height: 26px;
+	font-size: 16px;
+	border: none;
+}
+
+#search-container:hover {
+	border-color: #aaa #bbb #bbb #bbb;
+}
+
+#search-container:focus {
+	border-color: blue;
+}
+
+#search:focus {
+	outline: none;
+}
+
+#btns-container {
+	margin: 20px auto;
+	width: 290px;
+}
+
+.form-btn {
+	outline: none;
+	border: #eee 1px solid;
+	font-weight: bold;
+	background: #eee;
+	color: #666;
+	padding: 10px 15px;
+	margin: 20px 4px;
+	border-radius: 2px;
+}
+
+.form-btn:hover {
+	color: #222;
+	border-color: #bbb;
+	box-shadow: 0 1px 0 0 #eee;
 }
 
 .bar {
 	list-style-type: none;
 	font-size: 13px;
-}
-
-#footer-bar {
 	padding: 0;
 }
 
-#footer-bar li {
+footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	height: 40px;
+	width: 100%;
+	background-color: #eee;
+	padding: 0;
+	border-top: solid 1px #ddd;
+}
+
+footer li {
 	display: inline-block;
-	padding: 0;
+	padding: 0 20px;
 	margin: 0;
-	vertical-align: middle;
+	background-color: #eee;
+	color: #666;
 }
 
-#right-footer {
-	float: right;
+.fbar {
+	position: fixed;
+	display: inline-block;
+	bottom: 0;	
+	list-style-type: none;
+	font-size: 13px;
+	padding: 0;
+}
+
+#left-fbar {
+	left: 0;
+}	
+
+#right-fbar {
+	right: 0;
 }
 
 .clearfix {
